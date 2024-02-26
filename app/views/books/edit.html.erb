@@ -24,8 +24,8 @@
 
 <tr>
 
-<td><%= link_to "Show", controller: "books", action: "show" %></td>
-<td><%= link_to "Back", controller: "books", action: "index" %></td>
+<td><%= link_to "Show", book_path(@books.id) %></td>
+<td><%= link_to "Back", books_path %></td>
    </tr>
 </tbody>
 </table>
