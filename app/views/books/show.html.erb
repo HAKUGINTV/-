@@ -1,0 +1,35 @@
+  <table>
+  <tbody>
+<tr>
+
+<td><h2>title</h2>
+<p><%= @books.title %></p></td>
+
+
+
+<td><h2>body</h2>
+<p><%= @books.body %></p></td>
+
+</tr>
+
+<div>
+  <%= flash[:notice] %>
+</div>
+
+
+
+
+</tbody>
+</table>
+
+
+  <table>
+  <tbody>
+
+<tr>
+
+<td><%= link_to "Edit", controller: "books", action: "edit" %></td>
+<td><%= link_to "Back", controller: "books", action: "index" %></td>
+   </tr>
+</tbody>
+</table>
